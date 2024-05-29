@@ -1,0 +1,47 @@
+.navbar-main {
+  background-color: $blue_2;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: 0;
+  ol, li{
+  	margin: 0 0;
+  }
+  .nav > li > a {
+	color: $white;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    color: $orange;
+    background-color: transparent;
+  }  
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+    color: $orange;
+  }
+  .caret {
+    margin-left: 10px;
+  }
+
+  .dropdown-menu{
+    background-color: $blue_2;
+    min-width: 180px;
+    color: $white;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    > li{
+    	text-transform: uppercase;
+    	border-bottom: 1px solid #222;
+    	a{
+    		padding: 10px 20px;
+		    color: $white;
+		    &:hover{
+	    	    background-color: $orange;
+		    }
+    	}
+    }
+  }
+
+
+}

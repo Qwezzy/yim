@@ -1,0 +1,169 @@
+@media (min-width: 1200px){
+	
+}
+@media (max-width: 1024px) {
+	
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+	/* TOPBAR */
+	.contact-info > div:last-child{
+	    display: none;
+  	}
+  	/* END TOPBAR */
+	
+	.navbar-toggle{
+		clear: left;
+	    float: right;
+	}
+
+	/* SECTION */
+	.about-img{
+        min-height: initial;
+	    .about-img-top{
+    	    position: relative;
+		    width: 100%;
+		    bottom: 0;
+		    transform: translateY(0);
+		    border: 0;
+	    }
+	    .about-img-bottom{
+    	    position: relative;
+		 	width: 100%;
+		 	left: 0;
+	    }
+	}
+	/* END SECTION */
+	
+}
+
+@media (max-width: 767px) {
+
+	/* TOPBAR */
+	.contact-info > div{
+	    display: none;
+  	}
+  	/* END TOPBAR */
+
+  	/* BANNER */
+  	.banner{
+  		h1{
+  			font-size: 24px;
+  			&.bg{
+  				padding: 10px;
+  			}
+  		} 
+  		p{
+  			font-size: 16px;
+  			&.bg{
+  				padding: 10px;
+  			}
+  		}
+  	}
+  	.wrap-caption{
+		width: 100%;
+		&.center,
+		&.right{
+			width: 100%;
+		}
+  	}
+  	/* END BANNER */
+
+	/* HEADER */
+	.topbar{
+ 		display: none;
+	}
+	.header-1 {
+
+		.navbar-main{ 
+			.navbar-brand{
+		      position: relative;
+		    }
+	    }
+		
+		.navbar-nav > {
+		    float: none;
+			margin-left: 15px;
+			margin-right: 15px;
+			li{
+				font-size: 13px;
+				
+			}
+		}
+		.stiky{
+			.navbar-nav{
+				margin-left: 15px;
+				margin-right: 15px;
+				float: none;
+			}
+		}
+
+		/*.navbar-main{ 
+		    bottom: 0;
+			.navbar-brand{
+				position: absolute;
+	    		left: 0;
+			}
+			.dropdown-menu > li a{
+				color: $black_3;
+			}
+			&.stiky{
+				.navbar-brand{
+					top: 10px;
+					position: absolute;
+				}
+			}
+		}*/
+
+	}
+
+	/*.header-2, .header-3{
+		.navbar-main{ 
+			.navbar-brand{
+			    position: absolute;
+    			left: 0;
+    			top: 20px;
+			}
+			&.stiky{
+				.navbar-brand{
+					top: 10px;
+					position: absolute;
+				}
+			}
+		}
+	}*/
+
+	/* END HEADER */
+
+
+	/* NAVBAR */
+	.nav > li > a {
+	    padding: 10px 25px;
+	}
+	.navbar-main{ 
+		
+	}
+	.btn-nav{
+		display: none;
+	}
+	
+	/* END NAVBAR */
+
+
+	/* SECTION */
+	.cta-info{
+		width: 100%;
+	}
+	.overlap{
+		margin-top: 0;
+	}
+	/* END SECTION */
+
+}
+

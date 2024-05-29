@@ -1,0 +1,198 @@
+/* 5.1 - HERO */
+
+/*.banner{
+  position: relative;
+	padding: 0 0;
+  .overlay-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: -1;
+  }
+	ol li, ul li{
+		margin: 0;
+	}
+}*/
+
+.slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    bottom: 46%;
+    width: 100%;
+}
+.slides-navigation.center {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    bottom: 25%;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateX(-7px);
+        -ms-transform: translateX(-7px);
+        transform: translateX(-7px);
+    
+}
+.slides-navigation .container{
+	position: relative;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation.center a {
+  position: relative;
+  display: inline-table;
+  text-align: center;
+}
+/*.slides-navigation {
+  bottom: 20%;
+}*/
+.slides-navigation a {
+  color: $font__body-color;
+  font-size: 14px;
+  margin: 5px;
+  background: $white;
+  display: inline-block;
+  @include border-radius(30px);
+  width: 50px;
+  height: 50px;
+  /*border: 3px solid $white;*/
+  padding-top: 15px;
+  text-align: center;
+  &:hover {
+    color: $white;
+    background: $color_1;
+    text-decoration: none;
+  }
+  &.prev {
+      left: -60px;
+  }
+  &.next {
+    right: -60px;
+  }
+}
+.slides-navigation.center a.next {
+    left: 0;
+    right: 0;
+}
+.slides-navigation.center a.prev {
+    left: 0;
+}
+
+
+.banner{
+  float: left;
+  padding: 0 0;
+  &.owl-carousel{
+    position: relative;
+    height: 100%;
+    div:not(.owl-controls) {
+      height: 100%;
+    }
+    .owl-controls .owl-nav,
+    .owl-controls .owl-dots{
+      height: auto;
+    }
+    .owl-item img{
+      display: none;
+    }
+    .owl-slide {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .item{
+    position: relative;
+  }
+  .slider-pos{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+  }
+  h1{
+    color: $white;
+    font-size: 48px;
+    padding: 0; 
+    margin-bottom: 10px;
+    span{
+      color: $color_1;
+    }
+    &.bg{
+      background-color: rgba($color_2, .5);
+      padding: 20px; 
+    }
+  }
+  p{
+    font-size: 18px;
+    color: $white;
+    padding: 0;
+    &.bg{
+      background-color: rgba($white, .5);
+      padding: 20px;
+      color: $color_2;
+    }
+  }
+
+  .owl-controls .owl-nav [class*=owl-] {
+    color: $white;
+    font-size: 18px;
+    margin: 5px;
+    background: $color_2;
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding-top: 11px;
+    text-align: center;
+    @include border-radius(50%);
+    &:hover {
+      background: $color_1;
+      text-decoration: none;
+    }
+  }
+  .owl-nav{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 40%;
+    
+    .owl-prev{
+      float: left;
+      margin-left: 20px !important;
+    }
+    .owl-next{
+      float: right;
+      margin-right: 20px !important;
+    }
+  }
+}
+
+/* 5.2 - Text Typing */
+
+.wrap-caption{
+	
+	width: 50%;
+	&.center{
+		width: 80%;
+    margin: 0 auto;
+  	text-align: center;
+	}
+  &.right{
+    width: 50%;
+    text-align: right;
+    float: right;
+  }
+	.excerpt{
+		margin-bottom: 50px;
+	 	font-size: 18px;
+	}
+	.btn{
+		margin-right: 15px;
+	}
+}

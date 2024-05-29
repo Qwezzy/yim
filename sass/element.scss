@@ -1,0 +1,127 @@
+// box icon 1
+.box-icon-1{
+	
+	.icon{
+		display: inline-block;
+		color: $blue_1;
+	    font-size: 36px;
+    	line-height: 43px;
+	    float: left;
+	}
+	.body-content{
+	    margin-left: 55px;
+		color: $black_3;
+		
+		.heading{
+			color: $black_4;
+			font-weight: 600;
+		}
+	}
+}
+
+// box icon 2
+.box-icon-2{
+	
+	.icon{
+		display: inline-block;
+		color: $blue_1;
+	    font-size: 36px;
+    	line-height: 43px;
+	    float: left;
+	}
+	.body-content{
+	    margin-left: 65px;
+		color: $black_3;
+		
+		.heading{
+			color: $black_4;
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+// box image 1
+.box-image-1{
+	position: relative;
+	margin-bottom: 30px;
+	.image{
+		overflow: hidden;
+		background-color: #000;
+		img{
+			opacity: .9;
+			max-width: 100%;
+			-webkit-transform: scale(1,1);
+			-ms-transform: scale(1,1);
+			        transform: scale(1,1);
+			-webkit-transition-timing-function: ease-in;
+			        transition-timing-function: ease-in;
+			-webkit-transition-duration: 250ms;
+			        transition-duration: 250ms;
+			-webkit-transition: 0.1s all linear;
+			        transition: 0.1s all linear;
+		}
+	}
+	&:hover{
+		.image{
+			img{
+				opacity: .4;
+				-webkit-transform: scale(1.1,1.1);
+				-ms-transform: scale(1.1, 1.1);
+					transform: scale(1.1, 1.1);
+				-webkit-transition-timing-function: ease-out;
+				        transition-timing-function: ease-out;
+				-webkit-transition-duration: 250ms;
+				        transition-duration: 250ms;
+			}
+		}
+		.btn-secondary{
+			background-color: $orange;
+			color: $black_4;
+		}
+	}
+	.description{
+		position: absolute;
+		left: 40px;
+		bottom: 40px;
+	}
+	.blok-title {
+	    color: $white;
+	    @extend h3;
+	}
+
+}
+
+// Box-testimony
+.box-testimony{
+	position: relative;
+    box-sizing: border-box;
+	&:before{
+	    content: "\f10d";
+		color: $orange;
+	    font-family: FontAwesome;
+	    font-size: 60px;
+	    float: left;
+	    line-height: initial;
+	}
+	.quote-box{
+		margin-left: 80px;
+		blockquote{
+			@extend h3;
+		}
+		.quote-name{
+			@extend h3;
+			color: $blue_1;
+			span{
+				font-size: 14px;
+				font-style: italic;
+				color: $black_3;
+				font-weight: normal;
+				display: block;
+			}
+		}
+	}
+}
+.people{
+	
+}

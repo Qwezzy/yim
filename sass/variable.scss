@@ -1,0 +1,54 @@
+$font_1 : 'Roboto', sans-serif;
+$font_2 : 'Lora', serif;
+$font_icon: FontAwesome;
+
+$black_1: #666666;
+$black_2: #999999;
+$black_3: #222222; // body
+$blue_1: #041e42;
+$blue_2: #46c2ca;
+$blue_3: #eff3f6;
+$red: #ed1c24;
+$white: #ffffff;
+
+// Global
+$color_1: #FF7000;
+$color_2: #333333;
+$color_3: #000000;
+$color_4: $blue_3;
+
+// Fonts
+$font__body-color: $black_2;
+$font__heading-color: $color_2;
+$font__topbar-color: $white;
+$font__topbar-nav-color: $white;
+$font__topbar-nav-hover-color: $color_2;
+$font__navbar-color: $white;
+$font__navbar-hover-color: $color_1;
+$font__navbar-active-color: $color_1;
+$font__navbar-stiky-color: $color_2;
+
+// SETTING
+$topbar_bg: $color_1;
+$navbar_bg: #222222;
+
+$btn-primary-hover: $color_2;
+
+$footer-bg: #222222;
+$footer-font-color: $font__body-color;
+
+// Background
+$bg__topbar: $color_1;
+
+.bolder{
+	font-weight: 600;
+}
+
+.cfix{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+@import "mixin.scss";
