@@ -187,7 +187,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
+  : button;
   cursor: pointer; }
 
 button[disabled],
