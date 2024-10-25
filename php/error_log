@@ -1,0 +1,5 @@
+[21-Oct-2024 21:10:10 UTC] PHP Warning:  Undefined variable $subject in /home/yimorg/public_html/php/form-process.php on line 35
+[21-Oct-2024 21:10:10 UTC] PHP Warning:  Undefined variable $name in /home/yimorg/public_html/php/form-process.php on line 40
+[21-Oct-2024 21:10:10 UTC] PHP Warning:  Undefined variable $email in /home/yimorg/public_html/php/form-process.php on line 43
+[21-Oct-2024 21:10:10 UTC] PHP Warning:  Undefined variable $message in /home/yimorg/public_html/php/form-process.php on line 46
+[21-Oct-2024 21:10:10 UTC] PHP Warning:  Undefined variable $email in /home/yimorg/public_html/php/form-process.php on line 50
