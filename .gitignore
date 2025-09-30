@@ -1,0 +1,5 @@
+# Ignore debug and local environment files
+firebase-debug.log
+node_modules/
+.DS_Store
+.env

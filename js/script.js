@@ -227,9 +227,78 @@ $(document).ready(function(){
 	
 	
 });
+    
+	/* =================================
+	RUNTIME ACCESSIBILITY FIXES
+	- Ensure dropdown toggles have unique IDs and their menus' aria-labelledby matches
+	- Add accessible names to social icon links
+	- Add aria-label to progress bars when missing
+	==================================== */
+	(function(){
+		// Unique IDs for dropdown toggles and sync aria-labelledby
+		$('.nav-link.dropdown-toggle, [data-toggle="dropdown"]').each(function(i){
+			var $toggle = $(this);
+			var existingId = $toggle.attr('id');
+			// If no id or id is duplicated, generate a unique one
+			if(!existingId || $('[id="'+existingId+'"]').length > 1){
+				var base = 'navbarDropdown';
+				var suffix = i + 1;
+				var newId = base + '-' + suffix;
+				var counter = 1;
+				while($('#' + newId).length){
+					newId = base + '-' + suffix + '-' + counter;
+					counter++;
+				}
+				$toggle.attr('id', newId);
+				existingId = newId;
+			}
+			// Find the corresponding menu and set aria-labelledby
+			var $menu = $toggle.closest('.nav-item').find('.dropdown-menu').first();
+			if(!$menu || $menu.length === 0){
+				// fallback: next sibling
+				$menu = $toggle.nextAll('.dropdown-menu').first();
+			}
+			if($menu && $menu.length){
+				$menu.attr('aria-labelledby', existingId);
+			}
+		});
+
+		// Accessible names for social links (icons only)
+		$('.sosmed-icon a').each(function(){
+			var $a = $(this);
+			if(!$a.attr('aria-label')){
+				if($a.find('.fa-facebook').length) $a.attr('aria-label','Facebook');
+				else if($a.find('.fa-twitter').length) $a.attr('aria-label','Twitter');
+				else if($a.find('.fa-linkedin').length) $a.attr('aria-label','LinkedIn');
+				else if($a.find('.fa-instagram').length) $a.attr('aria-label','Instagram');
+				else if($a.find('.fa-pinterest').length) $a.attr('aria-label','Pinterest');
+				else $a.attr('aria-label','Social link');
+			}
+			if(!$a.attr('title')){
+				$a.attr('title',$a.attr('aria-label'));
+			}
+		});
+
+		// Ensure progress bars have an accessible name
+		$('.progress-bar').each(function(){
+			var $pb = $(this);
+			if(!$pb.attr('aria-label') && !$pb.attr('aria-labelledby')){
+				var label = '';
+				var $container = $pb.closest('.progress-fundraising, .progress');
+				if($container.length && $container.find('.persen').length){
+					label = $container.find('.persen').first().text();
+				}
+				if(!label){
+					var val = $pb.attr('aria-valuenow');
+					if(val) label = val + '%';
+				}
+				if(!label) label = 'Progress';
+				$pb.attr('aria-label', label.trim());
+			}
+		});
+	})();
 
 
 
 
-  
-  
+
