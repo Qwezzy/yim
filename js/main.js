@@ -1,8 +1,8 @@
 (function () {
   const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   const logos = window.YIM_LOGOS || {};
-  const light = logos.light || "images/YIM-LOGO.png";
-  const dark = logos.dark || "images/YIM-LOGO.png";
+  const mark = logos.light || "https://www.yim.org.za/images/YIM-LOGO.png";
+  const fallback = logos.local || "images/YIM-LOGO.png";
 
   function header() {
     return `
@@ -10,8 +10,7 @@
       <header class="site">
         <div class="wrap nav">
           <a class="logo" href="index.html">
-            <img src="${light}" alt="Yakha Ikusasa Manje logo" onerror="this.onerror=null;this.src='${logos.pngLight || logos.legacy || light}'">
-            <span>Yakha Ikusasa Manje</span>
+            <img src="${mark}" alt="Yakha Ikusasa Manje" onerror="this.onerror=null;this.src='${fallback}'">
           </a>
           <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
           <nav class="nav-links" id="navLinks">
@@ -35,7 +34,7 @@
       <footer class="site">
         <div class="wrap grid">
           <div>
-            <img src="${light}" alt="Yakha Ikusasa Manje" style="height:88px" onerror="this.onerror=null;this.src='${logos.pngLight || logos.legacy || light}'">
+            <img src="${mark}" alt="Yakha Ikusasa Manje" class="footer-logo" onerror="this.onerror=null;this.src='${fallback}'">
             <p>Established in 2004 as a Section 21 / NPC. Registered NPO 044-732 and PBO 9565369197. Working across Gauteng, Mpumalanga and KwaZulu-Natal.</p>
           </div>
           <div>
@@ -59,10 +58,10 @@
   document.body.insertAdjacentHTML("beforeend", footer());
   const heroLogo = document.getElementById("heroLogo");
   if (heroLogo) {
-    heroLogo.src = light;
+    heroLogo.src = mark;
     heroLogo.addEventListener("error", function once() {
       heroLogo.removeEventListener("error", once);
-      heroLogo.src = logos.pngLight || logos.legacy || light;
+      heroLogo.src = fallback;
     });
   }
 

@@ -1,9 +1,9 @@
 window.YIM_LOGOS = {
-  light: "images/YIM-LOGO.png",
-  dark: "images/YIM-LOGO.png",
-  pngLight: "assets/logo-light.png",
-  pngDark: "assets/logo-dark.png",
-  legacy: "https://www.yim.org.za/images/YIM-LOGO.png",
-  legacyWhite: "https://www.yim.org.za/images/logo_w.png"
+  // Official current mark only: YIM wordmark + AIDS ribbons.
+  // Never use the old five-people circle lockup.
+  light: "https://www.yim.org.za/images/YIM-LOGO.png",
+  dark: "https://www.yim.org.za/images/YIM-LOGO.png",
+  local: "images/YIM-LOGO.png",
+  compact: "https://www.yim.org.za/images/logo.png"
 };
 window.YIM_IMG = "https://www.yim.org.za/images";
