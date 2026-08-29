@@ -1,8 +1,8 @@
 (function () {
   const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   const logos = window.YIM_LOGOS || {};
-  const light = logos.light || "assets/logo.svg";
-  const dark = logos.dark || "assets/logo.svg";
+  const light = logos.light || "images/YIM-LOGO.png";
+  const dark = logos.dark || "images/YIM-LOGO.png";
 
   function header() {
     return `
@@ -10,7 +10,7 @@
       <header class="site">
         <div class="wrap nav">
           <a class="logo" href="index.html">
-            <img src="${light}" alt="YIM logo" onerror="this.onerror=null;this.src='${logos.pngLight || logos.legacy || light}'">
+            <img src="${light}" alt="Yakha Ikusasa Manje logo" onerror="this.onerror=null;this.src='${logos.pngLight || logos.legacy || light}'">
             <span>Yakha Ikusasa Manje</span>
           </a>
           <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
@@ -35,7 +35,7 @@
       <footer class="site">
         <div class="wrap grid">
           <div>
-            <img src="${dark}" alt="YIM" style="height:72px;background:#fff;border-radius:12px;padding:.4rem" onerror="this.onerror=null;this.src='${logos.pngDark || logos.legacyWhite || dark}'">
+            <img src="${light}" alt="Yakha Ikusasa Manje" style="height:88px" onerror="this.onerror=null;this.src='${logos.pngLight || logos.legacy || light}'">
             <p>Established in 2004 as a Section 21 / NPC. Registered NPO 044-732 and PBO 9565369197. Working across Gauteng, Mpumalanga and KwaZulu-Natal.</p>
           </div>
           <div>
