@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="Yakha Ikusasa Manje">
+  <title>Yakha Ikusasa Manje</title>
+  <g transform="translate(260 175)">
+    <circle cx="0" cy="-108" r="38" fill="#f0c400"/>
+    <path d="M-48 -72 C-48 -20 -28 18 0 42 C28 18 48 -20 48 -72 Z" fill="#f0c400"/>
+    <circle cx="108" cy="0" r="38" fill="#161616"/>
+    <path d="M72 -48 C20 -48 -18 -28 -42 0 C-18 28 20 48 72 48 Z" fill="#161616"/>
+    <circle cx="0" cy="108" r="38" fill="#e11d2a"/>
+    <path d="M48 72 C48 20 28 -18 0 -42 C-28 -18 -48 20 -48 72 Z" fill="#e11d2a"/>
+    <circle cx="-108" cy="0" r="38" fill="#1d4ed8"/>
+    <path d="M-72 48 C-20 48 18 28 42 0 C18 -28 -20 -48 -72 -48 Z" fill="#1d4ed8"/>
+    <circle cx="-76" cy="-76" r="38" fill="#2f9e3a"/>
+    <path d="M-38 -112 C8 -68 8 -20 -28 8 C-68 -20 -112 -8 -112 -54 Z" fill="#2f9e3a"/>
+    <circle cx="0" cy="0" r="78" fill="#ffffff"/>
+    <text x="0" y="10" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="28" font-weight="600" fill="#161616" letter-spacing="6">YIM</text>
+  </g>
+  <text x="260" y="390" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="26" font-weight="600" fill="#3a3a3a">Yakha Ikusasa Manje</text>
+</svg>
