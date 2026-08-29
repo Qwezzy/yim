@@ -1,8 +1,10 @@
 (function () {
   const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   const logos = window.YIM_LOGOS || {};
-  const mark = logos.light || "https://www.yim.org.za/images/YIM-LOGO.png";
-  const fallback = logos.local || "images/YIM-LOGO.png";
+  const light = logos.light || "assets/logo-light.png";
+  const dark = logos.dark || "assets/logo-dark.png";
+  const lightFile = logos.localLight || "assets/logo-light.png";
+  const darkFile = logos.localDark || "assets/logo-dark.png";
 
   function header() {
     return `
@@ -10,7 +12,7 @@
       <header class="site">
         <div class="wrap nav">
           <a class="logo" href="index.html">
-            <img src="${mark}" alt="Yakha Ikusasa Manje" onerror="this.onerror=null;this.src='${fallback}'">
+            <img src="${light}" alt="Yakha Ikusasa Manje" onerror="this.onerror=null;this.src='${lightFile}'">
           </a>
           <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
           <nav class="nav-links" id="navLinks">
@@ -34,7 +36,7 @@
       <footer class="site">
         <div class="wrap grid">
           <div>
-            <img src="${mark}" alt="Yakha Ikusasa Manje" class="footer-logo" onerror="this.onerror=null;this.src='${fallback}'">
+            <img src="${dark}" alt="Yakha Ikusasa Manje" class="footer-logo" onerror="this.onerror=null;this.src='${darkFile}'">
             <p>Established in 2004 as a Section 21 / NPC. Registered NPO 044-732 and PBO 9565369197. Working across Gauteng, Mpumalanga and KwaZulu-Natal.</p>
           </div>
           <div>
@@ -58,10 +60,10 @@
   document.body.insertAdjacentHTML("beforeend", footer());
   const heroLogo = document.getElementById("heroLogo");
   if (heroLogo) {
-    heroLogo.src = mark;
+    heroLogo.src = light;
     heroLogo.addEventListener("error", function once() {
       heroLogo.removeEventListener("error", once);
-      heroLogo.src = fallback;
+      heroLogo.src = lightFile;
     });
   }
 
