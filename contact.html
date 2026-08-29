@@ -4,26 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — YIM</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/logo.svg">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <main>
-    <section class="page-hero"><div class="wrap"><p class="kicker"><i></i> Contact</p><h1>Come in, write, or call.</h1></div></section>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker"><i></i> Contact</p>
+        <h1>Come in, write, or call.</h1>
+        <p>Head office hours are Monday to Saturday, 09:00–17:00. For school or clinic partnerships start with the Benoni office.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap office-grid">
+        <div class="card">
+          <p class="mini">Gauteng · Head office</p>
+          <h3>Benoni</h3>
+          <p>850 Bheka Street<br>Kingsway, Benoni, 1501<br>PO Box 131035, Northmead, 1501</p>
+          <p>Tel: +27 11 423 3370<br>Fax: +27 86 433 3300<br>Cell: 083 654 9014<br>Email: <a href="mailto:info@yim.org.za">info@yim.org.za</a></p>
+          <p>Alternative: Sithombe Flatela, 083 286 8110</p>
+        </div>
+        <div class="card">
+          <p class="mini">Mpumalanga</p>
+          <h3>Amsterdam</h3>
+          <p>136 Aubrey Street<br>Kwa-Thandeka Location<br>Amsterdam, 2375</p>
+          <p>Rural after-school, SEF livelihoods and food gardens for Mkhondo and surrounding communities.</p>
+        </div>
+        <div class="card">
+          <p class="mini">KwaZulu-Natal</p>
+          <h3>Rocksdrift / Nqutu</h3>
+          <p>Amoibe Community School<br>PO Box Rocksdrift<br>Rocksdrift, 3016<br>Nqutu</p>
+          <p>After-school teams, ECD support and the KZN food-garden borehole.</p>
+        </div>
+      </div>
+    </section>
     <section>
       <div class="wrap split">
         <div class="card">
-          <h3>Gauteng head office</h3>
-          <p>850 Bheka Street<br>Kingsway, Benoni, 1501<br>PO Box 131035, Northmead, 1501</p>
-          <p>Tel: +27 11 423 3370<br>Cell: 083 654 9014<br>Email: <a href="mailto:info@yim.org.za">info@yim.org.za</a></p>
-          <p>Alternative: Sithombe Flatela, 083 286 8110</p>
-          <p>NPO 044-732-NPO · PBO 9565369197</p>
+          <h3>Organisation details</h3>
+          <ul class="list">
+            <li>Yakha Ikusasa Manje Health Development Centre</li>
+            <li>NPO 044-732-NPO</li>
+            <li>PBO 9565369197</li>
+            <li>Website: www.yim.org.za</li>
+          </ul>
         </div>
-        <div class="card">
-          <h3>Other offices</h3>
-          <p><strong>Mpumalanga</strong><br>136 Aubrey Street, Kwa-Thandeka, Amsterdam, 2375</p>
-          <p><strong>KwaZulu-Natal</strong><br>Amoibe Community School, Rocksdrift, Nqutu, 3016</p>
-        </div>
+        <form class="donate-box" action="mailto:info@yim.org.za" method="get">
+          <h3>Send a note</h3>
+          <input type="hidden" name="subject" value="YIM website enquiry">
+          <div class="field"><label for="body">Message</label><textarea id="body" name="body" rows="6" required placeholder="Your name, phone and how we can help."></textarea></div>
+          <button class="btn btn-primary" type="submit">Open email</button>
+        </form>
       </div>
     </section>
   </main>
