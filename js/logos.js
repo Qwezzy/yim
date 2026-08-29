@@ -3,6 +3,7 @@ window.YIM_LOGOS = {
   dark: "assets/logo.svg",
   pngLight: "assets/logo-light.png",
   pngDark: "assets/logo-dark.png",
-  legacy: "images/YIM-LOGO.png",
-  legacyWhite: "images/logo_w.png"
+  legacy: "https://www.yim.org.za/images/YIM-LOGO.png",
+  legacyWhite: "https://www.yim.org.za/images/logo_w.png"
 };
+window.YIM_IMG = "https://www.yim.org.za/images";

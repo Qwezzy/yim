@@ -19,6 +19,8 @@
             <a href="about.html" data-page="about.html">About</a>
             <a href="programmes.html" data-page="programmes.html">Programmes</a>
             <a href="impact.html" data-page="impact.html">Impact</a>
+            <a href="gallery.html" data-page="gallery.html">Gallery</a>
+            <a href="team.html" data-page="team.html">Team</a>
             <a href="events.html" data-page="events.html">Events</a>
             <a href="contact.html" data-page="contact.html">Contact</a>
             <a class="btn btn-yellow" href="donate.html">Donate</a>
