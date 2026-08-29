@@ -1,6 +1,6 @@
 window.YIM_LOGOS = {
-  light: "assets/logo.svg",
-  dark: "assets/logo.svg",
+  light: "images/YIM-LOGO.png",
+  dark: "images/YIM-LOGO.png",
   pngLight: "assets/logo-light.png",
   pngDark: "assets/logo-dark.png",
   legacy: "https://www.yim.org.za/images/YIM-LOGO.png",
