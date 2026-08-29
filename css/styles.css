@@ -27,8 +27,8 @@ header.site { position: sticky; top: 0; z-index: 20; background: rgba(255,255,25
 .logo { display: flex; align-items: center; gap: .7rem; }
 .logo img { height: 52px; width: auto; }
 .logo span { font-weight: 600; letter-spacing: .04em; font-size: .92rem; }
-.nav-links { display: flex; gap: 1.15rem; align-items: center; }
-.nav-links a { font-size: .92rem; color: var(--muted); }
+.nav-links { display: flex; gap: .9rem; align-items: center; flex-wrap: wrap; }
+.nav-links a { font-size: .88rem; color: var(--muted); }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
 .btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 999px; padding: .75rem 1.15rem; font-weight: 600; cursor: pointer; }
 .btn-primary { background: var(--ink); color: #fff; }
@@ -67,6 +67,12 @@ section { padding: 4.2rem 0; }
 .list li { padding: .55rem 0 .55rem 1.4rem; position: relative; }
 .list li::before { content: ""; position: absolute; left: 0; top: .9rem; width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); }
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; }
+.gallery-6 { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.team-card { padding: 0; overflow: hidden; }
+.team-card img { width: 100%; height: 220px; object-fit: cover; background: #eceae4; }
+.team-card .pad { padding: 1rem 1.1rem 1.2rem; }
+.quote-card cite { display: block; margin-top: .7rem; font-size: .82rem; color: #5b5b5b; font-style: normal; }
 .donate-box { background: #fff; color: var(--ink); border-radius: 24px; padding: 1.4rem; border: 1px solid var(--line); }
 .amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; margin: 1rem 0; }
 .amt { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: .7rem; cursor: pointer; }
@@ -98,9 +104,9 @@ footer .grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 2rem; }
 .office-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .mini { font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
-@media (max-width: 860px) {
-  .hero-grid, .pillars, .split, footer .grid, .gallery, .amounts, .stats, .stats-4, .values, .board, .office-grid, .two { grid-template-columns: 1fr; }
-  .gallery { grid-template-columns: 1fr 1fr; }
+@media (max-width: 980px) {
+  .hero-grid, .pillars, .split, footer .grid, .gallery, .gallery-6, .team-grid, .amounts, .stats, .stats-4, .values, .board, .office-grid, .two { grid-template-columns: 1fr; }
+  .gallery, .gallery-6 { grid-template-columns: 1fr 1fr; }
   .menu-btn { display: block; }
   .nav-links { display: none; position: absolute; inset: 82px 1rem auto; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1rem; flex-direction: column; }
   .nav-links.open { display: flex; }
