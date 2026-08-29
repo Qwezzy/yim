@@ -46,8 +46,8 @@ header.site {
   gap: 1rem; min-height: 76px;
 }
 .logo { display: flex; align-items: center; gap: .55rem; flex-shrink: 0; }
-.logo img { height: 52px; width: auto; display: block; }
-.footer-logo { height: 72px; width: auto; margin-bottom: .8rem; }
+.logo img { height: 64px; width: auto; display: block; }
+.footer-logo { height: 96px; width: auto; margin-bottom: .8rem; }
 .nav-links { display: flex; gap: 1.15rem; align-items: center; }
 .nav-links a { font-size: .92rem; color: var(--muted); }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
@@ -91,7 +91,7 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
   box-shadow: var(--shadow); border: 1px solid var(--line);
   display: flex; align-items: center; justify-content: center;
 }
-.logo-card img { margin: 0 auto; width: 100%; max-width: 360px; height: auto; display: block; }
+.logo-card img { margin: 0 auto; width: 100%; max-width: 280px; height: auto; display: block; }
 
 section { padding: 4.2rem 0; }
 .section-head { max-width: 40rem; margin-bottom: 2rem; }
