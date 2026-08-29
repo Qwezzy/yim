@@ -45,12 +45,9 @@ header.site {
   display: flex; align-items: center; justify-content: space-between;
   gap: 1rem; min-height: 76px;
 }
-.logo { display: flex; align-items: center; gap: .55rem; }
-.logo img { height: 64px; width: auto; display: block; }
-.logo span { font-weight: 600; letter-spacing: .04em; font-size: .92rem; }
-@media (min-width: 900px) {
-  .logo span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-}
+.logo { display: flex; align-items: center; gap: .55rem; flex-shrink: 0; }
+.logo img { height: 52px; width: auto; display: block; }
+.footer-logo { height: 72px; width: auto; margin-bottom: .8rem; }
 .nav-links { display: flex; gap: 1.15rem; align-items: center; }
 .nav-links a { font-size: .92rem; color: var(--muted); }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
