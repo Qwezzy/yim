@@ -30,7 +30,7 @@ header.site { position: sticky; top: 0; z-index: 20; background: rgba(255,255,25
 .nav-links { display: flex; gap: 1.15rem; align-items: center; }
 .nav-links a { font-size: .92rem; color: var(--muted); }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border: 0; border-radius: 999px; padding: .75rem 1.15rem; font-weight: 600; cursor: pointer; }
+.btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 999px; padding: .75rem 1.15rem; font-weight: 600; cursor: pointer; }
 .btn-primary { background: var(--ink); color: #fff; }
 .btn-yellow { background: var(--yellow); color: #111; }
 .btn-ghost { background: transparent; border: 1px solid var(--line); }
@@ -44,11 +44,16 @@ h1 { font-size: clamp(2.3rem, 5vw, 4.3rem); font-weight: 560; }
 h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
 .lede { font-size: 1.08rem; color: var(--muted); max-width: 42rem; }
 .hero-actions { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.5rem; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-top: 2rem; }
+.stats, .stats-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+.stats { grid-template-columns: repeat(3, 1fr); margin-top: 2rem; }
 .stat { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.1rem; }
 .stat b { display: block; font-size: 1.4rem; }
+.stat span { color: var(--muted); font-size: .85rem; }
 .logo-card { background: #fff; border-radius: 28px; padding: 1.5rem; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.logo-card img { margin: 0 auto; max-height: 280px; }
 section { padding: 4.2rem 0; }
+.section-head { max-width: 40rem; margin-bottom: 2rem; }
+.section-head p, .page-hero p { color: var(--muted); }
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem; }
 .swatch { width: 42px; height: 8px; border-radius: 99px; margin-bottom: 1rem; }
@@ -61,6 +66,7 @@ section { padding: 4.2rem 0; }
 .list { padding: 0; margin: 0; list-style: none; }
 .list li { padding: .55rem 0 .55rem 1.4rem; position: relative; }
 .list li::before { content: ""; position: absolute; left: 0; top: .9rem; width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; }
 .donate-box { background: #fff; color: var(--ink); border-radius: 24px; padding: 1.4rem; border: 1px solid var(--line); }
 .amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; margin: 1rem 0; }
 .amt { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: .7rem; cursor: pointer; }
@@ -74,8 +80,16 @@ footer.site { background: #0f0f0f; color: #ddd; padding: 3rem 0 1.4rem; }
 footer .grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 2rem; }
 .fine { border-top: 1px solid #2a2a2a; margin-top: 2rem; padding-top: 1rem; color: #888; font-size: .85rem; }
 .page-hero { padding: 3rem 0 2rem; background: var(--paper); }
+.photo { width: 100%; height: 220px; object-fit: cover; border-radius: 16px; }
+.photo-lg { height: 280px; }
+.caption { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
+.figure { margin: 0; }
+.partner { background: var(--paper); border-radius: 12px; padding: .7rem .9rem; }
+.partners { display: flex; flex-wrap: wrap; gap: .5rem; }
+.values { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem; }
 @media (max-width: 860px) {
-  .hero-grid, .pillars, .split, footer .grid, .amounts, .stats { grid-template-columns: 1fr; }
+  .hero-grid, .pillars, .split, footer .grid, .gallery, .amounts, .stats, .stats-4, .values { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr 1fr; }
   .menu-btn { display: block; }
   .nav-links { display: none; position: absolute; inset: 82px 1rem auto; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1rem; flex-direction: column; }
   .nav-links.open { display: flex; }
